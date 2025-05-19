@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe-Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo">Café Bliss</div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="sign-in-up"><a href="#">Sign In</a></li>
+        <li class="sign-in-up"><a href="#">Sign Up</a></li>
+          </ul>
+           <div class="nav-icons">
+             <div class="cart-icon">
+                 🛒 <span id="cart-count">0</span>
+             </div>
+             <div class="hamburger" id="hamburger">
+                  &#9776;<!-- hamburger icon -->
+             </div>
+           </div>
+        </nav>
+      </header>
+      <!-- Cart Popup Modal -->
+        <div id="cart-modal" class="cart-modal hidden">
+            <div class="cart-content">
+              <h3>Your Cart</h3>
+              <ul id="cart-items"></ul>
+              <button id="close-cart">Close</button>
+            </div>
+        </div>
+
+      <section class="main page-title-section">
+        <div class="hero page-title-hero">
+            <div class="hero-text page-title-text">
+                <h1>Our Menu</h1>
+                <p>Explore our handcrafted drinks and freshly baked delights.</p>
+            </div>
+        </div>
+    </section>
+
+         <!-- Menu Categories -->
+  <section class="menu-section">
+    <div class="menu-category-wrapper">  <h2 class="section-title">Hot Beverages</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="images/espresso.jpeg" alt="Espresso" class="menu-item-image" /> 
+           <h4 class="menu-item-title">Espresso</h4> 
+            <p class="menu-item-description">Strong and bold, our classic espresso.</p> 
+             <span class="menu-item-price">Rs. 350</span>  
+             <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        <div class="menu-item">
+          <img src="images/Latte..jpeg" alt="Latte" class="menu-item-image" />
+          <h4 class="menu-item-title">Caramel Latte</h4>
+          <p class="menu-item-description">Rich caramel flavor with smooth espresso and milk.</p>
+          <span class="menu-item-price">Rs. 480</span>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="menu-category-wrapper">  <h2 class="section-title">Cold Brews</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="images/coldbrew.jpeg" alt="Cold Brew" class="menu-item-image" />
+          <h4 class="menu-item-title">Cold Brew</h4>
+          <p class="menu-item-description">Chilled and slow-brewed for a bold, smooth taste.</p>
+          <span class="menu-item-price">Rs. 420</span>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+          <img src="images/mochafrappe.jpeg" alt="Mocha Frappe" class="menu-item-image" />
+          <h4 class="menu-item-title">Mocha Frappe</h4>
+          <p class="menu-item-description">Blended chocolate and coffee delight.</p>
+          <span class="menu-item-price">Rs. 500</span>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-category-wrapper">  <h2 class="section-title">Pastries & Snacks</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="images/croissant.jpeg" alt="Croissant" class="menu-item-image" />
+          <h4 class="menu-item-title">Butter Croissant</h4>
+          <p class="menu-item-description">Freshly baked, flaky and golden brown.</p>
+          <span class="menu-item-price">Rs. 250</span>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+          <img src="images/brownie.jpeg" alt="Brownie" class="menu-item-image" />
+          <h4 class="menu-item-title">Chocolate Brownie</h4>
+          <p class="menu-item-description">Rich, fudgy and absolutely irresistible.</p>
+          <span class="menu-item-price">Rs. 300</span>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <h3>Café Bliss</h3>
+            <p>Your perfect coffee companion since 2024.</p>
+          </div>
+      
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Email: info@cafebliss.com</p>
+            <p>Phone: +92 300 1234567</p>
+            <p>Location: Gujranwala, Pakistan</p>
+          </div>
+
+          <div>
+          <h4>Follow Us</h4>
+          <div class="footer-social">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+          </div>
+          </div>
+          
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 Café Bliss. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+    </body>
+    </html>

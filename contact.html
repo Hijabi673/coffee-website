@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe-Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo">Café Bliss</div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="sign-in-up"><a href="#">Sign In</a></li>
+        <li class="sign-in-up"><a href="#">Sign Up</a></li>
+          </ul>
+          <div class="nav-icons">
+             <div class="cart-icon">
+                 🛒 <span id="cart-count">0</span>
+             </div>
+             <div class="hamburger" id="hamburger">
+                  &#9776;<!-- hamburger icon -->
+             </div>
+           </div>
+        </nav>
+    </header>
+    <!-- Cart Popup Modal -->
+        <div id="cart-modal" class="cart-modal hidden">
+            <div class="cart-content">
+              <h3>Your Cart</h3>
+              <ul id="cart-items"></ul>
+              <button id="close-cart">Close</button>
+            </div>
+        </div>
+
+      <section class="main page-title-section">
+        <div class="hero page-title-hero">
+            <div class="hero-text page-title-text">
+                <h1>Lets Connect</h1>
+                <p>We’d love to hear from you! Reach out for feedback, inquiries, or just to say hello.</p>
+                <a href="#contact-form" class="cta-btn">Send a Message</a>
+              </div>
+        </div>
+    </section>
+
+
+      <div class="map-container">
+        <h1 class="animated-heading" style="padding-top: 20px;">Our Location</h1>
+        <iframe 
+          src="https://www.google.com/maps?q=Gujranwala,+Pakistan&output=embed" 
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <section class="contact-section">  <div class="contact-container">  <div class="contact-wrapper">  <h2 class="section-title">Contact Us</h2>  </div>
+        <form action="#" method="POST" id="contact-form">
+          <label for="name">Name</label>
+              <input type="text" id="name" name="name" required minlength="3" placeholder="Your Name" aria-describedby="name-error">  <small id="name-error" class="error-message"></small>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="Your Email" aria-describedby="email-error">  <small id="email-error" class="error-message"></small>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required placeholder="Subject" aria-describedby="subject-error">  <small id="subject-error" class="error-message"></small>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required minlength="10" placeholder="Your Message" aria-describedby="message-error"></textarea>  <small id="message-error" class="error-message"></small>
+            </div>
+            <button type="submit">Send Message</button>  
+            </form>
+        <p id="success-message" class="success-message">  Thank you! Your message has been sent.
+        </p>
+      </div>
+    </section>
+      
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <h3>Café Bliss</h3>
+            <p>Your perfect coffee companion since 2024.</p>
+          </div>
+      
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Email: info@cafebliss.com</p>
+            <p>Phone: +92 300 1234567</p>
+            <p>Location: Gujranwala, Pakistan</p>
+          </div>
+
+          <div>
+          <h4>Follow Us</h4>
+          <div class="footer-social">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+          </div>
+          </div>
+          
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 Café Bliss. All rights reserved.</p>
+        </div>
+      </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

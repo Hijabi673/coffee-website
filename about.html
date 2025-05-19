@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe-About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Café Bliss</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="sign-in-up"><a href="#">Sign In</a></li>
+        <li class="sign-in-up"><a href="#">Sign Up</a></li>
+            </ul>
+           <div class="nav-icons">
+             <div class="cart-icon">
+                 🛒 <span id="cart-count">0</span>
+             </div>
+             <div class="hamburger" id="hamburger">
+                  &#9776;<!-- hamburger icon -->
+             </div>
+           </div>
+        </nav>
+    </header>
+    <!-- Cart Popup Modal -->
+        <div id="cart-modal" class="cart-modal hidden">
+            <div class="cart-content">
+              <h3>Your Cart</h3>
+              <ul id="cart-items"></ul>
+              <button id="close-cart">Close</button>
+            </div>
+        </div>
+
+    <section class="main page-title-section">
+        <div class="hero page-title-hero">
+            <div class="hero-text page-title-text">
+                <h1>About Us</h1>
+                <p>Discover our story and the people behind Café Bliss.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-contain">
+        <div class="contain">
+            <h2 class="animated-heading">Our Story</h2>
+            <p>
+                Café Bliss was born out of a love for high-quality coffee and a desire to create a peaceful, welcoming space.
+                Since 2024, we've been serving freshly brewed happiness in every cup.
+            </p>
+
+            <h2 class="animated-heading">Our Mission</h2>
+            <p>
+                To bring people together with rich aromas, cozy vibes, and unforgettable flavors. Whether you're here to work,
+                relax, or meet friends — we’ve got the perfect brew for every mood.
+            </p>
+        </div>
+    </section>
+
+    <section class="timeline-section">
+        <h2 class="animated-heading">Our Journey</h2>
+        <ul class="timeline">
+            <li>
+                <strong>2024:</strong> Café Bliss was founded in Gujranwala
+            </li>
+            <li>
+                <strong>Summer 2024:</strong> Introduced our signature Caramel Latte
+            </li>
+            <li>
+                <strong>2025:</strong> Launched vegan and sugar-free options
+            </li>
+            <li>
+                <strong>2025:</strong> Celebrated 500+ happy customers
+            </li>
+        </ul>
+    </section>
+
+    <section class="team-section">
+        <h2 class="animated-heading">Meet the Baristas</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/barista1.jpeg" alt="Barista 1">
+                <h3>Ayesha</h3>
+                <p>Lead Barista with a passion for latte art and customer smiles.</p>
+            </div>
+            <div class="team-member">
+                <img src="images/barista2.jpeg" alt="Barista 2">
+                <h3>Ali</h3>
+                <p>Coffee expert and blend creator behind our signature brews.</p>
+            </div>
+            <div class="team-member">
+                <img src="images/barista3.jpeg" alt="Barista 3">
+                <h3>Fatima</h3>
+                <p>Hospitality enthusiast making every visit feel like home.</p>
+            </div>
+            <div class="team-member">
+                <img src="images/barista4.jpeg" alt="Barista 4">
+                <h3>Sarah</h3>
+                <p>Expert in crafting signature brews with passion and a perfect pour every time.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h3>Café Bliss</h3>
+                <p>Your perfect coffee companion since 2024.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@cafebliss.com</p>
+                <p>Phone: +92 300 1234567</p>
+                <p>Location: Gujranwala, Pakistan</p>
+            </div>
+
+            <div>
+                <h4>Follow Us</h4>
+                <div class="footer-social">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Café Bliss. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
